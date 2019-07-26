@@ -1,0 +1,53 @@
+Because in Brainf*ck everything other than very few symbols will be ignored ([]+-<>.,) - more info can be found on 
+https://esolangs.org/wiki/Brainfuck, so will try to make it user friendly and write what i'm doing at the end of every line
+
+What I will do ? Write "Hello, World!" in BF.  Including space,  comma and exclamation mark. So let's get down to ASCII numbers that I
+will need :
+H - 72
+e - 101
+l - 108
+o - 111
+W - 87
+r - 114
+d - 100
+[space] - 32
+, - 44
+! - 33
+
++++++ +++ increase cell 0 to 8
+[ while cell 0 not 0
+>++++ go to cell 1 and increase value by 4
+[ while cell 1 not 0
+>+ increase cell 2 by 1 because guess where space and exclamation mark are going to come from
+>+ increase cell 3 by 1 for comma
+>++ increase cell 4 by 2 for letter H
+>+++ increase cell 5 by 3 for letter W
+>+++ increase cell 6 by 3 for e and d
+>+++ increase cell 7 by 3 for l and o
+>+++ increase cell 8 by 3 for r
+<<<<<<<- decrease cell 1 by 1
+]
+>>+ go to cell 3 and increase by 1 so it is 32 plus 8 as end result
+>+ cell 4 by one so 64 plus 8 = 72
+>- cell 5 by 3 so 96 minus 1 = 88
+>+ cell 6 by 1 so 96 plus 1 = 104
+>+ cell 7 by 1 so 96 plus 8 = 104
+>++ cell 8 by 2 so 96 plus 16 = 112
+<<<<<<<<- decrease cell 0 by 1
+]
+>>>. print letter H
+>>---. print e
+>++++.. print ll
++++. print o
+<<<<++++. print comma
+<.+ print space and increase by 1
+>>-. print W
+>>. print o
+>++. print r
+<---. print l
+<-. print d
+<<<<. print exclamation mark
+
+so full program would be :
+
+++++++++[>++++[>+>+>++>+++>+++>+++>+++<<<<<<<-]>>+>+>->+>+>++<<<<<<<<-]>>>.>>---.>++++..+++.<<<<++++.<.+>>-.>>.>++.<---.<-.<<<<.
