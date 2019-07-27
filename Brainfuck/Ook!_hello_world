@@ -1,6 +1,6 @@
-You can find correct code on https://github.com/VPleckaitis/EsotericLanguages/blob/master/Brainfuck/helloworld_1st_attempt
+You can find correct code on https://github.com/VPleckaitis/EsotericLanguages/blob/master/Brainfuck/bf_hello_world
 Here is Ook! version of that... because challenge
-Real code would be 
+BF code would be 
 ++++++++[>++++[>+>+>++>+++>+++>+++>+++<<<<<<<-]>>+>+>->+>+>++<<<<<<<<-]>>>>.>>---.>++++..+++.<<<<++++.<.+>>>-.>>.>++.<---.<-.<<<<.
 
 Result in Ook!
